@@ -1,5 +1,10 @@
 # Thread App
-API endpoints info
+
+Application generates random unique strings from provided char of strings.
+
+User can also define how long strings will be - min and max length. 
+
+# API endpoints info
 
 ## Start new thread example
 ```
@@ -65,3 +70,4 @@ Json example
 ```
 GET http://localhost:8080/download/1
 ```
+
