@@ -49,8 +49,13 @@ public class ThreadController {
     }
 
     @GetMapping("/task/{id}")
-    public ResponseEntity<Thread> getThreadById(@PathVariable("id") int id) throws Exception {
+    public ResponseEntity<Thread> getThreadById(@PathVariable("id") long id) throws Exception {
         return new ResponseEntity(myThreadSerice.getById(id), HttpStatus.OK);
+    }
+
+    @GetMapping("/download/{id}")
+    public ResponseEntity<byte[]> downloadErrorData(@PathVariable("id") long id) throws Exception {
+        return myThreadSerice.createFile(id);
     }
 
 }

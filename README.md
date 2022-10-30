@@ -57,3 +57,11 @@ Response example
 	"status": "ended"
 }
 ```
+## Get thread result as txt file
+```
+GET http://localhost:8080/download/{id}
+```
+Json example
+```
+GET http://localhost:8080/download/1
+```

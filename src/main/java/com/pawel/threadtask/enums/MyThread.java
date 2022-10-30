@@ -54,7 +54,7 @@ public class MyThread implements Runnable{
         this.min = min;
         this.max = max;
         this.howMuchStrings = howMuchStrings;
-        this.characters = characters;
+        this.characters = characters.replaceAll("\\s+", "");
     }
 
     public int getMin() {
